@@ -19,16 +19,14 @@ function App() {
         <>
             <header>
                 <h2>Give Feedback!</h2>
+                <button onClick={() => addGood()}>good</button>
+                <button onClick={() => addNeutral()}>neutral</button>
+                <button onClick={() => addBad()}>bad</button>
             </header>
-
-            <button onClick={() => addGood()}>good</button>
-            <button onClick={() => addNeutral()}>neutral</button>
-            <button onClick={() => addBad()}>bad</button>
-
             <section>
                 <h2>Statistics</h2>
                 <p>good: {good}</p>
-                <p>neutral : {neutral}</p>
+                <p>neutral: {neutral}</p>
                 <p>bad: {bad}</p>
             </section>
         </>
