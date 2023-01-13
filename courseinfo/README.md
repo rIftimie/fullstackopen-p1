@@ -13,3 +13,11 @@ Then. I render the object directly.
 ## Total
 
 Gets the total number of exercises directly from the App Component passed as a parameter calculated from the Array.filter function.
+
+# Exercise 1.2
+
+Now, we have created a Part Component which is used in the Content Component.
+
+## Content
+
+We pass on the data with the indexes of the parts array of Objects.

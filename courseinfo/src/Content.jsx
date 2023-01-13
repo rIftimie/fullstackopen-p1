@@ -1,12 +1,13 @@
+import Part from "./components/Part";
+
 function Content(props) {
-    const parts = props.parts.map((part) => (
-        <p key={part.number}>
-            Part {part.number} - {part.title}
-            <br />
-            Exercise: {part.exercise}
-        </p>
-    ));
-    return <>{parts}</>;
+    return (
+        <div>
+            <Part item={props.parts[0]} />
+            <Part item={props.parts[1]} />
+            <Part item={props.parts[2]} />
+        </div>
+    );
 }
 
 export default Content;
