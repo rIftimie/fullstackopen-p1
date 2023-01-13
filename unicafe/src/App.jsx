@@ -4,6 +4,9 @@ function App() {
     const [good, setGood] = useState(0);
     const [neutral, setNeutral] = useState(0);
     const [bad, setBad] = useState(0);
+    const allFeedback = good + bad + neutral;
+    const averageFeedback = (good * 1 + bad * -1) / allFeedback;
+    const positiveFeedback = (good / allFeedback) * 100;
 
     function addGood() {
         setGood(good + 1);
@@ -28,6 +31,9 @@ function App() {
                 <p>good: {good}</p>
                 <p>neutral: {neutral}</p>
                 <p>bad: {bad}</p>
+                <p>all: {allFeedback}</p>
+                <p>average: {averageFeedback}</p>
+                <p>positive: {positiveFeedback}%</p>
             </section>
         </>
     );
