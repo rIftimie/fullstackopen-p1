@@ -21,3 +21,11 @@ Now, we have created a Part Component which is used in the Content Component.
 ## Content
 
 We pass on the data with the indexes of the parts array of Objects.
+
+# Exercise 1.3 - 1.5
+
+Most of the indications stated in these steps I've already made on previous ones.
+
+I've used some deconstructuring in the Content and Part Component to ease up the reading process.
+
+> The course and parts variables have been combined into a single variable.

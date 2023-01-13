@@ -1,12 +1,12 @@
 import React from "react";
 
-function Part(props) {
+function Part({ item }) {
     return (
         <div>
-            <p key={props.item.number}>
-                Part {props.item.number} - {props.item.title}
+            <p>
+                Part - {item.name}
                 <br />
-                Exercise: {props.item.exercises}
+                Exercise: {item.exercises}
             </p>
         </div>
     );

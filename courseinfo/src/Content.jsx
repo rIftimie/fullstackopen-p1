@@ -1,11 +1,11 @@
 import Part from "./components/Part";
 
-function Content(props) {
+function Content({ parts }) {
     return (
         <div>
-            <Part item={props.parts[0]} />
-            <Part item={props.parts[1]} />
-            <Part item={props.parts[2]} />
+            <Part item={parts[0]} />
+            <Part item={parts[1]} />
+            <Part item={parts[2]} />
         </div>
     );
 }
