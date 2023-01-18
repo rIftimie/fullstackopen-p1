@@ -23,14 +23,26 @@ function App() {
         copy[selected] += 1;
         setPoints([...copy]);
     }
-
+    const mostUpvotes = points.reduce((prev, next) =>
+        prev > next ? prev : next
+    );
+    const bestAnecdotes = anecdotes.filter((prev, next) =>
+        points[next] === mostUpvotes ? prev : null
+    );
     return (
         <main>
-            <p>{anecdotes[selected]}</p>
-            <p>Votes: {points[selected]}</p>
-            <br />
-            <button onClick={() => changeAnectode()}>next anecdote</button>
-            <button onClick={() => upVote()}>vote</button>
+            <section>
+                <h2>Anecdote of the day</h2>
+                <p>{anecdotes[selected]}</p>
+                <p>Votes: {points[selected]}</p>
+                <br />
+                <button onClick={() => changeAnectode()}>next anecdote</button>
+                <button onClick={() => upVote()}>vote</button>
+            </section>
+            <section>
+                <h2>Anecdote with the most votes</h2>
+                {bestAnecdotes[0]}
+            </section>
         </main>
     );
 }
