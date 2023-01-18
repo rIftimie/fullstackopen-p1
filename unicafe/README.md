@@ -17,3 +17,18 @@ Created Conditional Rendering for the Statistics Component.
 # Exercise 1.10 unicafe step 5
 
 Added Button and StatisticLine as Componenets.
+
+# Exercise 1.11 unicafe step 6
+
+Converted Statistics rendering into a HTML Table where each StatisticsLine:
+
+```jsx
+<tr>
+    <td>
+        type
+    <\td>
+    <td>
+        value
+    <\td>
+<\tr>
+```

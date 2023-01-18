@@ -2,9 +2,10 @@ import React from "react";
 
 function StatisticLine({ type, value }) {
     return (
-        <section>
-            {type}: {value}
-        </section>
+        <tr>
+            <td>{type}</td>
+            <td>{value}</td>
+        </tr>
     );
 }
 
